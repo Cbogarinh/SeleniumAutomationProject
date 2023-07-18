@@ -1,0 +1,22 @@
+[
+    {
+        "username":"Admin",
+        "password":"admin123",
+        "invalidUserName":"user",
+        "invalidPassword":"password",
+        "firstName":"Paul",
+        "lastName":"Reeve",
+        "fullName":"Paul Reeve",
+        "profilePicturePath":"C:\\Users\\hp\\Desktop\\Selenium\\OrangeHRMProfilePictureDemo.png",
+        "user":"Charlie123",
+        "userRole":"Admin",
+        "userStatus":"Enabled",
+        "newPassword":"Admin_123"
+
+        
+
+    },
+    {
+
+    }
+]
