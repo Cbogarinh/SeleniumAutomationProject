@@ -6,5 +6,5 @@
 * File uploading using AutoIT
 * Data Driven using Json File
 * Extent Reports (with attached screenshot)
-* Profiles Created for each suite, to facilitate integration with CI/CD (Jenkins)
+* Profiles Created for each test set & test suite, to facilitate integration with CI/CD (Jenkins)
 * Maven, TestNg integration (Maven surefire)
