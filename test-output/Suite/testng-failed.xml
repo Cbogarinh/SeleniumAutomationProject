@@ -4,24 +4,16 @@
   <listeners>
     <listener class-name="testComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="LoginValidation"/>
-      </run>
-    </groups>
+  <test thread-count="5" name="userManagementValidation(failed)">
     <classes>
-      <class name="testCases.LoginFunctionalityValidation">
+      <class name="testCases.Admin_UserManagementFunctionality">
         <methods>
           <include name="launchApplication"/>
           <include name="tearDown"/>
-          <include name="loginWithBlankCrendentials"/>
-          <include name="loginWithInvalidPassword"/>
-          <include name="logoutFunctionality"/>
-          <include name="loginWithInvalidUser"/>
-          <include name="loginWithValidCredetials"/>
+          <include name="addUserValidation" invocation-numbers="0"/>
+          <include name="deleteUserValidation"/>
         </methods>
-      </class> <!-- testCases.LoginFunctionalityValidation -->
+      </class> <!-- testCases.Admin_UserManagementFunctionality -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- userManagementValidation(failed) -->
 </suite> <!-- Failed suite [Suite] -->

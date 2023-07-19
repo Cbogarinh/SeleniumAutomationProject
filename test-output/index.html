@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse--1137984187\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\hp\eclipse-workspace\OrangeHRM\testNGSuites\RegressionSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,89 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,  1 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.Admin_UserManagementFunctionality" class="method navigator-link" hash-for-method="addUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">addUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.Admin_UserManagementFunctionality" class="method navigator-link" hash-for-method="deleteUserValidation">deleteUserValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.Admin_UserManagementFunctionality" class="method navigator-link" hash-for-method="addUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">addUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.PIM_EmployeeInformationFunctionality" class="method navigator-link" hash-for-method="addEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">addEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.Admin_UserManagementFunctionality" class="method navigator-link" hash-for-method="deleteUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">deleteUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.PIM_EmployeeInformationFunctionality" class="method navigator-link" hash-for-method="deleteEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">deleteEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginFunctionalityValidation" class="method navigator-link" hash-for-method="loginWithBlankCrendentials">loginWithBlankCrendentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginFunctionalityValidation" class="method navigator-link" hash-for-method="loginWithInvalidPassword({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">loginWithInvalidPassword({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginFunctionalityValidation" class="method navigator-link" hash-for-method="loginWithInvalidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">loginWithInvalidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginFunctionalityValidation" class="method navigator-link" hash-for-method="loginWithValidCredetials({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">loginWithValidCredetials({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.LoginFunctionalityValidation" class="method navigator-link" hash-for-method="logoutFunctionality({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">logoutFunctionality({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.ForgotPasswordFunctionalty" class="method navigator-link" hash-for-method="resetPasswordBlankUser">resetPasswordBlankUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.ForgotPasswordFunctionalty" class="method navigator-link" hash-for-method="resetPasswordValidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">resetPasswordValidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,10 +185,10 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.Admin_UserManagementFunctionality</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -135,133 +198,459 @@
                   </a> <!-- addUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...) -->
                   <span class="method-name">addUserValidation</span>
                   <span class="parameters">({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png})</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (9b43417daf7e93682ef0cc8ba9505d4f)] -&gt; id: oxd-toaster_1] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.99, chrome: {chromedriverVersion: 115.0.5790.98 (4eacc220b55f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51533/devtoo..., se:cdpVersion: 115.0.5790.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b43417daf7e93682ef0cc8ba9505d4f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at abstractComponents.AbstractComponents.waitForWebElementToAppear(AbstractComponents.java:44)
+	at pageObject.AddUserPage.getSuccessToast(AddUserPage.java:64)
+	at testCases.Admin_UserManagementFunctionality.addUserValidation(Admin_UserManagementFunctionality.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.Admin_UserManagementFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUserValidation">
+                  </a> <!-- deleteUserValidation -->
+                  <span class="method-name">deleteUserValidation</span>
+                  <div class="stack-trace">java.lang.Throwable: Method testCases.Admin_UserManagementFunctionality.deleteUserValidation() on instance testCases.Admin_UserManagementFunctionality@769a1df5 depends on not successfully finished methods 
+[testCases.Admin_UserManagementFunctionality.addUserValidation() on instance testCases.Admin_UserManagementFunctionality@769a1df5]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.ForgotPasswordFunctionalty</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="resetPasswordBlankUser">
+                  </a> <!-- resetPasswordBlankUser -->
+                  <span class="method-name">resetPasswordBlankUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="deleteUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">
-                  </a> <!-- deleteUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...) -->
-                  <span class="method-name">deleteUserValidation</span>
+                  <a name="resetPasswordValidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">
+                  </a> <!-- resetPasswordValidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...) -->
+                  <span class="method-name">resetPasswordValidUser</span>
                   <span class="parameters">({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.PIM_EmployeeInformationFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">
+                  </a> <!-- addEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...) -->
+                  <span class="method-name">addEmployeeValidation</span>
+                  <span class="parameters">({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">
+                  </a> <!-- deleteEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...) -->
+                  <span class="method-name">deleteEmployeeValidation</span>
+                  <span class="parameters">({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.LoginFunctionalityValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithBlankCrendentials">
+                  </a> <!-- loginWithBlankCrendentials -->
+                  <span class="method-name">loginWithBlankCrendentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidPassword({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">
+                  </a> <!-- loginWithInvalidPassword({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...) -->
+                  <span class="method-name">loginWithInvalidPassword</span>
+                  <span class="parameters">({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">
+                  </a> <!-- loginWithInvalidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...) -->
+                  <span class="method-name">loginWithInvalidUser</span>
+                  <span class="parameters">({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredetials({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">
+                  </a> <!-- loginWithValidCredetials({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...) -->
+                  <span class="method-name">loginWithValidCredetials</span>
+                  <span class="parameters">({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutFunctionality({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)">
+                  </a> <!-- logoutFunctionality({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...) -->
+                  <span class="method-name">logoutFunctionality</span>
+                  <span class="parameters">({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse--1137984187\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hp\eclipse-workspace\OrangeHRM\testNGSuites\RegressionSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testComponents.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginValidation&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.LoginFunctionalityValidation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginValidation --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ForgotPasswordValidation&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.ForgotPasswordFunctionalty&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ForgotPasswordValidation --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;userManagementValidation&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.Admin_UserManagementFunctionality&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- userManagementValidation --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PIM_AddEmployeeFunctionalityValidation&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.PIM_EmployeeInformationFunctionality&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PIM_AddEmployeeFunctionalityValidation --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">LoginValidation (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ForgotPasswordValidation (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">userManagementValidation (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PIM_AddEmployeeFunctionalityValidation (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">LoginValidation</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithBlankCrendentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithInvalidPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithInvalidUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithValidCredetials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logoutFunctionality</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">addEmployee</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addEmployeeValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addUserValidation')
 data.setCell(0, 2, 'testCases.Admin_UserManagementFunctionality')
-data.setCell(0, 3, 15804);
+data.setCell(0, 3, 22524);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteUserValidation')
-data.setCell(1, 2, 'testCases.Admin_UserManagementFunctionality')
-data.setCell(1, 3, 8715);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 1, 'addEmployeeValidation')
+data.setCell(1, 2, 'testCases.PIM_EmployeeInformationFunctionality')
+data.setCell(1, 3, 11577);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deleteEmployeeValidation')
+data.setCell(2, 2, 'testCases.PIM_EmployeeInformationFunctionality')
+data.setCell(2, 3, 6600);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logoutFunctionality')
+data.setCell(3, 2, 'testCases.LoginFunctionalityValidation')
+data.setCell(3, 3, 5025);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'resetPasswordValidUser')
+data.setCell(4, 2, 'testCases.ForgotPasswordFunctionalty')
+data.setCell(4, 3, 3659);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginWithValidCredetials')
+data.setCell(5, 2, 'testCases.LoginFunctionalityValidation')
+data.setCell(5, 3, 2795);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginWithInvalidPassword')
+data.setCell(6, 2, 'testCases.LoginFunctionalityValidation')
+data.setCell(6, 3, 2728);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginWithInvalidUser')
+data.setCell(7, 2, 'testCases.LoginFunctionalityValidation')
+data.setCell(7, 3, 2249);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'resetPasswordBlankUser')
+data.setCell(8, 2, 'testCases.ForgotPasswordFunctionalty')
+data.setCell(8, 3, 1965);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginWithBlankCrendentials')
+data.setCell(9, 2, 'testCases.LoginFunctionalityValidation')
+data.setCell(9, 3, 1077);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'deleteUserValidation')
+data.setCell(10, 2, 'testCases.Admin_UserManagementFunctionality')
+data.setCell(10, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.Admin_UserManagementFunctionality</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.LoginFunctionalityValidation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
-                <span class="method-start">13585 ms</span>
+                <span class="method-name">loginWithBlankCrendentials</span>
+                <span class="method-start">7237 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29394 ms</span>
+                <span class="method-start">8331 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">29598 ms</span>
+                <span class="method-start">8881 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">deleteUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
-                <span class="method-start">37160 ms</span>
+                <span class="method-name">loginWithInvalidPassword({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
+                <span class="method-start">14716 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">45878 ms</span>
+                <span class="method-start">17447 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">17546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
+                <span class="method-start">22308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24559 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">24665 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredetials({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
+                <span class="method-start">30804 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33605 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">33760 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logoutFunctionality({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
+                <span class="method-start">41790 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46819 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.ForgotPasswordFunctionalty</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">47518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">resetPasswordBlankUser</span>
+                <span class="method-start">54287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">56253 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">56337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">resetPasswordValidUser({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
+                <span class="method-start">63401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67062 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.Admin_UserManagementFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">67343 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addUserValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
+                <span class="method-start">74124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">96881 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">deleteUserValidation</span>
+                <span class="method-start">97058 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.PIM_EmployeeInformationFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">97177 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
+                <span class="method-start">103511 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">115089 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">115350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteEmployeeValidation({lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul R...)</span>
+                <span class="method-start">121211 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">127812 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

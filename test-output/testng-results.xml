@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="9" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-18T10:57:58 CST" name="Default suite" finished-at="2023-07-18T10:58:45 CST" duration-ms="46390">
+  <suite started-at="2023-07-19T11:46:23 CST" name="Suite" finished-at="2023-07-19T11:48:31 CST" duration-ms="128028">
     <groups>
+      <group name="LoginValidation">
+        <method signature="LoginFunctionalityValidation.loginWithBlankCrendentials()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" name="loginWithBlankCrendentials" class="testCases.LoginFunctionalityValidation"/>
+        <method signature="LoginFunctionalityValidation.loginWithInvalidPassword(java.util.HashMap)[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" name="loginWithInvalidPassword" class="testCases.LoginFunctionalityValidation"/>
+        <method signature="LoginFunctionalityValidation.loginWithInvalidUser(java.util.HashMap)[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" name="loginWithInvalidUser" class="testCases.LoginFunctionalityValidation"/>
+        <method signature="LoginFunctionalityValidation.loginWithValidCredetials(java.util.HashMap)[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" name="loginWithValidCredetials" class="testCases.LoginFunctionalityValidation"/>
+        <method signature="LoginFunctionalityValidation.logoutFunctionality(java.util.HashMap)[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" name="logoutFunctionality" class="testCases.LoginFunctionalityValidation"/>
+      </group> <!-- LoginValidation -->
+      <group name="addEmployee">
+        <method signature="PIM_EmployeeInformationFunctionality.addEmployeeValidation(java.util.HashMap)[pri:0, instance:testCases.PIM_EmployeeInformationFunctionality@7d9f158f]" name="addEmployeeValidation" class="testCases.PIM_EmployeeInformationFunctionality"/>
+      </group> <!-- addEmployee -->
     </groups>
-    <test started-at="2023-07-18T10:57:58 CST" name="Default test" finished-at="2023-07-18T10:58:45 CST" duration-ms="46390">
-      <class name="testCases.Admin_UserManagementFunctionality">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.Admin_UserManagementFunctionality@5c6648b0]" started-at="2023-07-18T10:57:59 CST" name="launchApplication" finished-at="2023-07-18T10:58:12 CST" duration-ms="13582" status="PASS">
+    <test started-at="2023-07-19T11:46:23 CST" name="LoginValidation" finished-at="2023-07-19T11:47:10 CST" duration-ms="47136">
+      <class name="testCases.LoginFunctionalityValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:23 CST" name="launchApplication" finished-at="2023-07-19T11:46:30 CST" duration-ms="7235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="addUserValidation(java.util.HashMap)[pri:0, instance:testCases.Admin_UserManagementFunctionality@5c6648b0]" started-at="2023-07-18T10:58:12 CST" name="addUserValidation" data-provider="adminUsermManagementData" finished-at="2023-07-18T10:58:28 CST" duration-ms="15804" status="PASS">
+        <test-method signature="loginWithBlankCrendentials()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:30 CST" name="loginWithBlankCrendentials" finished-at="2023-07-19T11:46:31 CST" duration-ms="1077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithBlankCrendentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:31 CST" name="tearDown" finished-at="2023-07-19T11:46:31 CST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:32 CST" name="launchApplication" finished-at="2023-07-19T11:46:38 CST" duration-ms="5835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginWithInvalidPassword(java.util.HashMap)[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:38 CST" name="loginWithInvalidPassword" data-provider="loginTestData" finished-at="2023-07-19T11:46:40 CST" duration-ms="2728" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -19,18 +41,223 @@
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:40 CST" name="tearDown" finished-at="2023-07-19T11:46:40 CST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:40 CST" name="launchApplication" finished-at="2023-07-19T11:46:45 CST" duration-ms="4762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginWithInvalidUser(java.util.HashMap)[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:45 CST" name="loginWithInvalidUser" data-provider="loginTestData" finished-at="2023-07-19T11:46:47 CST" duration-ms="2249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:47 CST" name="tearDown" finished-at="2023-07-19T11:46:47 CST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:47 CST" name="launchApplication" finished-at="2023-07-19T11:46:54 CST" duration-ms="6139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginWithValidCredetials(java.util.HashMap)[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:54 CST" name="loginWithValidCredetials" data-provider="loginTestData" finished-at="2023-07-19T11:46:56 CST" duration-ms="2795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredetials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:56 CST" name="tearDown" finished-at="2023-07-19T11:46:57 CST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:46:57 CST" name="launchApplication" finished-at="2023-07-19T11:47:05 CST" duration-ms="8029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="logoutFunctionality(java.util.HashMap)[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:47:05 CST" name="logoutFunctionality" data-provider="loginTestData" finished-at="2023-07-19T11:47:10 CST" duration-ms="5025" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginFunctionalityValidation@6b09fb41]" started-at="2023-07-19T11:47:10 CST" name="tearDown" finished-at="2023-07-19T11:47:10 CST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginFunctionalityValidation -->
+    </test> <!-- LoginValidation -->
+    <test started-at="2023-07-19T11:47:10 CST" name="ForgotPasswordValidation" finished-at="2023-07-19T11:47:30 CST" duration-ms="19702">
+      <class name="testCases.ForgotPasswordFunctionalty">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.ForgotPasswordFunctionalty@20bd8be5]" started-at="2023-07-19T11:47:10 CST" name="launchApplication" finished-at="2023-07-19T11:47:17 CST" duration-ms="6769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="resetPasswordBlankUser()[pri:0, instance:testCases.ForgotPasswordFunctionalty@20bd8be5]" started-at="2023-07-19T11:47:17 CST" name="resetPasswordBlankUser" finished-at="2023-07-19T11:47:19 CST" duration-ms="1965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPasswordBlankUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ForgotPasswordFunctionalty@20bd8be5]" started-at="2023-07-19T11:47:19 CST" name="tearDown" finished-at="2023-07-19T11:47:19 CST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.ForgotPasswordFunctionalty@20bd8be5]" started-at="2023-07-19T11:47:19 CST" name="launchApplication" finished-at="2023-07-19T11:47:26 CST" duration-ms="7064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="resetPasswordValidUser(java.util.HashMap)[pri:0, instance:testCases.ForgotPasswordFunctionalty@20bd8be5]" started-at="2023-07-19T11:47:26 CST" name="resetPasswordValidUser" data-provider="forgotPasswordData" finished-at="2023-07-19T11:47:30 CST" duration-ms="3659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPasswordValidUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ForgotPasswordFunctionalty@20bd8be5]" started-at="2023-07-19T11:47:30 CST" name="tearDown" finished-at="2023-07-19T11:47:30 CST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.ForgotPasswordFunctionalty -->
+    </test> <!-- ForgotPasswordValidation -->
+    <test started-at="2023-07-19T11:47:30 CST" name="userManagementValidation" finished-at="2023-07-19T11:48:00 CST" duration-ms="29730">
+      <class name="testCases.Admin_UserManagementFunctionality">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.Admin_UserManagementFunctionality@769a1df5]" started-at="2023-07-19T11:47:30 CST" name="launchApplication" finished-at="2023-07-19T11:47:37 CST" duration-ms="6781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="addUserValidation(java.util.HashMap)[pri:0, instance:testCases.Admin_UserManagementFunctionality@769a1df5]" started-at="2023-07-19T11:47:37 CST" name="addUserValidation" data-provider="adminUsermManagementData" finished-at="2023-07-19T11:47:59 CST" duration-ms="22524" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (9b43417daf7e93682ef0cc8ba9505d4f)] -> id: oxd-toaster_1] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.99, chrome: {chromedriverVersion: 115.0.5790.98 (4eacc220b55f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51533/devtoo..., se:cdpVersion: 115.0.5790.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b43417daf7e93682ef0cc8ba9505d4f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (9b43417daf7e93682ef0cc8ba9505d4f)] -> id: oxd-toaster_1] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.99, chrome: {chromedriverVersion: 115.0.5790.98 (4eacc220b55f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51533/devtoo..., se:cdpVersion: 115.0.5790.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b43417daf7e93682ef0cc8ba9505d4f
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at abstractComponents.AbstractComponents.waitForWebElementToAppear(AbstractComponents.java:44)
+at pageObject.AddUserPage.getSuccessToast(AddUserPage.java:64)
+at testCases.Admin_UserManagementFunctionality.addUserValidation(Admin_UserManagementFunctionality.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.Admin_UserManagementFunctionality@5c6648b0]" started-at="2023-07-18T10:58:28 CST" name="tearDown" finished-at="2023-07-18T10:58:28 CST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.Admin_UserManagementFunctionality@769a1df5]" started-at="2023-07-19T11:48:00 CST" name="tearDown" finished-at="2023-07-19T11:48:00 CST" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.Admin_UserManagementFunctionality@5c6648b0]" started-at="2023-07-18T10:58:28 CST" name="launchApplication" finished-at="2023-07-18T10:58:36 CST" duration-ms="7562" status="PASS">
+        <test-method signature="deleteUserValidation(java.util.HashMap)[pri:0, instance:testCases.Admin_UserManagementFunctionality@769a1df5]" started-at="2023-07-19T11:48:00 CST" name="deleteUserValidation" finished-at="2023-07-19T11:48:00 CST" depends-on-methods="testCases.Admin_UserManagementFunctionality.addUserValidation" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testCases.Admin_UserManagementFunctionality.deleteUserValidation() on instance testCases.Admin_UserManagementFunctionality@769a1df5 depends on not successfully finished methods 
+[testCases.Admin_UserManagementFunctionality.addUserValidation() on instance testCases.Admin_UserManagementFunctionality@769a1df5]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testCases.Admin_UserManagementFunctionality.deleteUserValidation() on instance testCases.Admin_UserManagementFunctionality@769a1df5 depends on not successfully finished methods 
+[testCases.Admin_UserManagementFunctionality.addUserValidation() on instance testCases.Admin_UserManagementFunctionality@769a1df5]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserValidation -->
+      </class> <!-- testCases.Admin_UserManagementFunctionality -->
+    </test> <!-- userManagementValidation -->
+    <test started-at="2023-07-19T11:48:00 CST" name="PIM_AddEmployeeFunctionalityValidation" finished-at="2023-07-19T11:48:31 CST" duration-ms="30787">
+      <class name="testCases.PIM_EmployeeInformationFunctionality">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.PIM_EmployeeInformationFunctionality@7d9f158f]" started-at="2023-07-19T11:48:00 CST" name="launchApplication" finished-at="2023-07-19T11:48:06 CST" duration-ms="6334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="deleteUserValidation(java.util.HashMap)[pri:0, instance:testCases.Admin_UserManagementFunctionality@5c6648b0]" started-at="2023-07-18T10:58:36 CST" name="deleteUserValidation" data-provider="adminUsermManagementData" finished-at="2023-07-18T10:58:45 CST" depends-on-methods="testCases.Admin_UserManagementFunctionality.addUserValidation" duration-ms="8715" status="PASS">
+        <test-method signature="addEmployeeValidation(java.util.HashMap)[pri:0, instance:testCases.PIM_EmployeeInformationFunctionality@7d9f158f]" started-at="2023-07-19T11:48:06 CST" name="addEmployeeValidation" data-provider="employeeInfoData" finished-at="2023-07-19T11:48:18 CST" duration-ms="11577" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,12 +267,31 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteUserValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.Admin_UserManagementFunctionality@5c6648b0]" started-at="2023-07-18T10:58:45 CST" name="tearDown" finished-at="2023-07-18T10:58:45 CST" duration-ms="153" status="PASS">
+        </test-method> <!-- addEmployeeValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PIM_EmployeeInformationFunctionality@7d9f158f]" started-at="2023-07-19T11:48:18 CST" name="tearDown" finished-at="2023-07-19T11:48:18 CST" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.Admin_UserManagementFunctionality -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.PIM_EmployeeInformationFunctionality@7d9f158f]" started-at="2023-07-19T11:48:18 CST" name="launchApplication" finished-at="2023-07-19T11:48:24 CST" duration-ms="5861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="deleteEmployeeValidation(java.util.HashMap)[pri:0, instance:testCases.PIM_EmployeeInformationFunctionality@7d9f158f]" started-at="2023-07-19T11:48:24 CST" name="deleteEmployeeValidation" data-provider="employeeInfoData" finished-at="2023-07-19T11:48:31 CST" depends-on-methods="testCases.PIM_EmployeeInformationFunctionality.addEmployeeValidation" duration-ms="6600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lastName=Reeve, userStatus=Enabled, invalidUserName=user, invalidPassword=password, fullName=Paul Reeve, newPassword=Admin_123, firstName=Paul, password=admin123, userRole=Admin, user=Charlie123, username=Admin, profilePicturePath=C:\Users\hp\Desktop\Selenium\OrangeHRMProfilePictureDemo.png}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployeeValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PIM_EmployeeInformationFunctionality@7d9f158f]" started-at="2023-07-19T11:48:31 CST" name="tearDown" finished-at="2023-07-19T11:48:31 CST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.PIM_EmployeeInformationFunctionality -->
+    </test> <!-- PIM_AddEmployeeFunctionalityValidation -->
+  </suite> <!-- Suite -->
 </testng-results>

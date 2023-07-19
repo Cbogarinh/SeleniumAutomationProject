@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.Admin_UserManagementFunctionality">
+      <class name="testCases.LoginFunctionalityValidation">
         <methods>
           <include name="launchApplication"/>
           <include name="tearDown"/>
-          <include name="addUserValidation" invocation-numbers="0"/>
-          <include name="deleteUserValidation"/>
-          <include name="getScreenshot"/>
-          <include name="initializeDriver"/>
+          <include name="loginWithBlankCrendentials"/>
+          <include name="loginWithInvalidPassword"/>
+          <include name="logoutFunctionality"/>
+          <include name="loginWithInvalidUser"/>
+          <include name="loginWithValidCredetials"/>
         </methods>
-      </class> <!-- testCases.Admin_UserManagementFunctionality -->
+      </class> <!-- testCases.LoginFunctionalityValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
